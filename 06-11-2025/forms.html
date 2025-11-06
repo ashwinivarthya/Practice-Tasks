@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: rgb(7, 134, 5);">-:<u>Registration Form</u>:-</h1>
+    <form action="/submit" method="post">
+        <label for="name" style="color: rgb(111, 171, 20);">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter Your Full Name"
+            style="width: 100%; padding: 8px; margin: 4px 0;">
+        <br><br>
+
+        <label for="gender" style="color: rgb(38, 99, 42);">Gender:</label><br><br>
+
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="number" style="color: rgb(13, 174, 228);">RollNumber:</label>
+
+        <input type="text" id="number" name="rollnumber" required placeholder="Enter Your RollNumber"
+            style="width: 100%; padding: 8px; margin: 4px 0;">
+        <br><br>
+
+        <label for="department" style="color: rgb(217, 15, 228);">Department:</label>
+        <select id="department" name="department" style="width: 100%; padding: 8px; margin: 4px 0;">
+
+            <option value="select">----Select Department----</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="civil">Civil</option>
+            <option value="chemical">Chemical</option>
+            <option value="it">Information Technology</option>
+            <option value="aero">Aerospace</option>
+            <option value="biotech">Biotechnology</option>
+
+        </select>
+        <br><br>
+
+        <label for="yearofstudy" style="color: rgb(221, 135, 14);">Year of Study:</label><br><br>
+
+        <input type="radio" id="1st" name="yearofstudy" value="1st" checked>
+        <label for="1st">1st Year</label>
+
+        <input type="radio" id="2nd" name="yearofstudy" value="2nd">
+        <label for="2nd">2nd Year</label>
+
+        <input type="radio" id="3rd" name="yearofstudy" value="3rd">
+        <label for="3rd">3rd Year</label>
+
+        <input type="radio" id="4th" name="yearofstudy" value="4th">
+        <label for="4th">4th Year</label>
+        <br><br>
+
+        <label for="Courses" style="color: rgb(239, 16, 94);">Select Your Courses:</label><br><br>
+
+        <input type="checkbox" id="html" name="courses" value="HTML" checked>
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="courses" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="courses" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="python" name="courses" value="Python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="java" name="courses" value="Java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="datascience" name="courses" value="DataScience">
+        <label for="java">Data Science</label>
+
+        <input type="checkbox" id="cloud" name="courses" value="Cloud">
+        <label for="cloud">Cloud</label>
+        <br><br>
+
+        <label for="email" style="color: rgb(165, 31, 62);">Email:</label>
+        <input type="text" id="email" name="email" required placeholder="Enter Your Email"
+            style="width: 100%; padding: 8px; margin: 4px 0;">
+        <br><br>
+
+        <label for="photo" style="color: rgb(48, 154, 9);">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" style="margin: 4px 0;">
+        <!--image/* where it represents only the photos of jpg, jpeg, png etc.,-->
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#">Terms and Conditions</a>.</label>
+        <br><br>
+
+        <input type="submit" value="Submit" style="background-color: green;">
+        <input type="reset" value="Reset" style="background-color: red;">
+    </form>
+
+</body>
+
+</html>
