@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section>
+    <header>
+        <h1>Welcome to HTML Tutorials</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="basic.html">HTML</a>
+            <a href="links.html">Links&Anchors</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="tables.html">Tables</a>
+            <a href="forms.html">Forms</a>
+            <a href="summary.html">Summary</a>
+        </nav>
+    </header>
+
+    <h2 style="text-align: center;">-:HTML Forms:-</h2>
+
+    <ol type="1">
+
+        <li>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        </li>
+        <li>The HTML <b>&lt;form&gt;</b> element is used to create an HTML form for user input.</li>
+        <li>The <b>&lt;form&gt;</b> element is a container for various types of input elements such as text fields,
+            checkboxes,
+            radio buttons, and submit buttons.etc.,</li>
+        <li>The HTML <b>&lt;input&gt;</b> element is the most used form element.</li>
+        <li>An <b>&lt;input&gt;</b> element can be displayed in many ways, depending on the <b>type</b> attribute.</li>
+        <li>The <b>&lt;label&gt;</b> tag defines a label for many form elements.</li>
+
+        <li>The <b>&lt;label&gt;</b> element also helps users who have difficulty clicking on very small regions (such
+            as radio
+            buttons or checkboxes) - because when the user clicks the text within the <b>&lt;label&gt;</b> element, it
+            toggles
+            the
+            radio button/checkbox.</li>
+
+        <li>The <b>for</b> attribute of the <b>&lt;label&gt;</b> tag should be equal to the <b>id</b> attribute of the
+            <b>&lt;input&gt;</b> element
+            to
+            bind them together.
+        </li>
+
+        <li>The <b>&lt;input type="radio"&gt;</b> defines a radio button. Radio buttons allow the user to select one
+            option
+            from a
+            set.</li>
+        <li>The <b>&lt;input type="checkbox"&gt;</b> defines a checkbox. Checkboxes allow the user to select one or more
+            options
+            from a set of choices.</li>
+
+        <li>The <b>&lt;input type="submit"&gt;</b> defines a button for submitting the form data to a form-handler.</li>
+    </ol>
+
+    <main style="display: flex; padding-left: 60px; font-size: 20px;">
+        <section style="flex: 1;">
+            <h3>i. Basic Structure of an HTML Form</h3>
+            <p>&lt;form action="submit_form.php" method="post"&gt;
+                &lt;label for="name"&gt;Name:&lt;/label&gt;
+                &lt;input type="text" id="name" name="name"&gt;
+                &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;</p>
+
+            <p style="font-weight: 600;">Example of a Simple HTML Form:</p>
+            <p>
+                &lt;form action="/submit_form" method="post"&gt;
+                &lt;label for="username"&gt;Username:&lt;/label&gt;
+                &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;
+                &lt;label for="password"&gt;Password:&lt;/label&gt;
+                &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;
+                &lt;input type="checkbox" id="remember" name="remember"&gt;
+                &lt;label for="remember"&gt;Remember me&lt;/label&gt;&lt;br&gt;
+                &lt;input type="submit" value="Login"&gt;
+                &lt;/form&gt;
+            </p>
+            <a href="forms_example.html"
+                style="background-color: rgb(156, 210, 156); padding: 10px; color: black; text-decoration: none; border-radius: 8px;">
+                View Example
+            </a>
+
+        </section>
+        <section style="flex: 1;">
+
+            <h3>ii. HTML Form Elements</h3>
+            <ul>
+                <li><strong>&lt;form&gt;:</strong> Defines an HTML form for user input.</li>
+                <li><strong>&lt;input&gt;:</strong> Used for various types of input fields (text, password, checkbox,
+                    radio,
+                    etc.).</li>
+                <li><strong>&lt;textarea&gt;:</strong> Used for multi-line text input.</li>
+                <li><strong>&lt;select&gt;:</strong> Used to create a drop-down list.</li>
+                <li><strong>&lt;button&gt;:</strong> Used to create clickable buttons.</li>
+                <li><strong>&lt;label&gt;:</strong> Defines labels for input elements.</li>
+                <li><strong>&lt;option&gt;:</strong> Defines an option that can be selected.</li>
+                <li><strong>&lt;fieldset&gt;:</strong> Groups related elements in a form.</li>
+                <li><strong>&lt;legend&gt;:</strong> Defines a caption for a &lt;fieldset&gt; element.</li>
+            </ul>
+        </section>
+
+        <section style="flex: 1;">
+            <h3>iii. Form Attributes</h3>
+            <ul>
+                <li><strong>action:</strong> Specifies the URL where the form data will be sent upon submission.</li>
+                <li><strong>method:</strong> Specifies the HTTP method to use when sending form data (GET or POST).</li>
+                <li><strong>enctype:</strong> Specifies how the form data should be encoded when submitted (used for
+                    file
+                    uploads).</li>
+                <li><strong>target:</strong> attribute tells the browser where to open the response after form
+                    submission.</li>
+                <p>There are two targets we use very often those are <b>_blank</b> and <b>_self</b>.</p>
+                <p>Where <b>_blank</b> is used to open the response in next window. Whereas <b>_self</b> opens in the
+                    same window.</p>
+            </ul>
+        </section>
+    </main>
+
+    <p style="color: darkmagenta; font-weight: bold; text-align: center;"><q>You’ve taken the first step in web
+            development — keep building, keep exploring!</q></p>
+
+    <p style="text-align: center; font-weight: 800; color: darkgreen;">*****End Of the Tutorial*****</p>
+
+    <a href="tables.html"
+        style="background-color: rgb(76, 114, 226); color: white; padding: 12px; border-radius: 8px; text-decoration: none; float: left;">
+        <<< Prev. Page</a>
+            <a href="summary.html"
+                style="background-color: rgb(35, 214, 62); color: white; padding: 12px; border-radius: 8px; text-decoration: none; float: right;">Next
+                Page >>></a>
+
+            <br><br><br><br>
+            <footer>
+                <p>
+                    &copy; 2025 HTML Tutorials. All rights reserved.
+                </p>
+                <p>Designed By Jadavath Varthya Ashwini.</p>
+                <p>info:<a href="mailto:ashwinivarthya31@gmail.com">ashwinivarthya31@gmail.com</a></p>
+            </footer>
+
+            </body>
+
+</html>

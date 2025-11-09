@@ -5,32 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="font-family: Georgia, Times, 'Times New Roman', serif; background-color: beige;">
-    <header style="background-color: aquamarine; text-align: center; padding: 20px;">
-        <h1>Welcome to my HTML Tutorials</h1>
+<body>
+    <header>
+        <h1>Welcome to HTML Tutorials</h1>
         <nav>
-            <a href="index.html" style="color: rgb(30, 3, 3); text-decoration: none;  margin: 10px;">Home</a>
-            <a href="1.html" style="color: rgb(30, 3, 3); text-decoration: none;  margin: 10px;">HTML</a>
-            <a href="2.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Links&Anchors</a>
-            <a href="3.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Tables</a>
-            <a href="4.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Forms</a>
-            <a href="5.html" style="color: rgb(30, 3, 3); text-decoration: none; margin: 10px;">Audios&Videos</a>
+            <a href="index.html">Home</a>
+            <a href="basic.html">HTML</a>
+            <a href="links.html">Links&Anchors</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="tables.html">Tables</a>
+            <a href="forms.html">Forms</a>
+            <a href="summary.html">Summary</a>
         </nav>
     </header>
+    <p style="color: darkgoldenrod; font-weight: bold; text-align: center;"><q>Web development is not just about code — it’s about bringing ideas to life.</q></p>
     <main>
-        <h2 style="padding: 30px; text-decoration: underline;">-:Concepts In HTML:-</h2>
-        <ol type="1" style="font-weight: 500; font-size: 25px;">
-            <li>HTML Basics</li>
-            <li>Links & Anchors</li>
-            <li>HTML Tables</li>
-            <li>HTML Forms</li>
-            <li>Audios & Videos</li>
-        </ol>
+        <section class="left">
+            <h2>-:Concepts In HTML:-</h2>
+            <ol type="1">
+                <li>HTML Basics</li><br>
+                <li>Links & Anchors</li><br>
+                <li>Multimedias</li><br>
+                <li>HTML Tables</li><br>
+                <li>HTML Forms</li>
+            </ol>
+        </section>
+        <section class="right">
+            <img src="assets/index.jpg" alt="descriptive">
+        </section>
     </main>
-    <br><br><br><br><br><br>
-    <footer style="text-align: center; padding: 20px; background-color: #20B2AA;">
+
+    <a href="basic.html" style="float: right; background-color: rgb(35, 214, 62); color: white; padding: 12px;text-decoration: none; border-radius: 8px;">Next Page >>></a>
+
+    <br><br><br><br>
+    <footer>
         <p>
             &copy; 2025 HTML Tutorials. All rights reserved.
         </p>

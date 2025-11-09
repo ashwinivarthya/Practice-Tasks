@@ -1,0 +1,65 @@
+body {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(28, 44, 150);
+}
+
+nav a {
+    color: rgb(129, 40, 40);
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+section.left {
+    flex: 2;
+    padding-left: 100px;
+}
+
+section.right {
+    flex: 1;
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgb(117, 9, 78);
+    padding: 30px;
+    text-decoration: underline;
+}
+
+h3 {
+    color: brown;
+}
+
+ol {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 80px;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #008b8b;
+}
