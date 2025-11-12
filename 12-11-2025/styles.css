@@ -1,0 +1,399 @@
+/* Selectors are header tags and paragraphs*/
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Element selector */
+h1 {
+    text-align: center;
+    color: goldenrod;
+}
+
+p {
+    color: blue;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* ID Selectors */
+#title {
+    color: blueviolet;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Class Selector */
+.hero-content {
+    color: rgb(78, 40, 113);
+    font-weight: bold;
+    background-color: #de9797;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Grouped Selectors */
+h2,
+h3,
+h4 {
+    color: rgb(44, 112, 112);
+    margin: 30px;
+}
+
+/* Descendant Selector */
+div p {
+    font-style: italic;
+    color: rgb(124, 73, 7);
+}
+
+/* Child Selector */
+.container>p {
+
+    font-weight: bold;
+}
+
+/* Adjacent selector */
+h3+p {
+    color: rgb(55, 167, 171);
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* Pseudo-class Selectors */
+.btn.primary:hover {
+    background-color: rgb(76, 143, 202);
+}
+
+/* Pseudo-element Selectors */
+.quote::before {
+    content: '"';
+    font-size: 2rem;
+    color: rgb(5, 5, 45);
+}
+
+.quote::after {
+    content: '"';
+    font-size: 2rem;
+    color: rgb(5, 5, 45);
+}
+
+/* Named Colors */
+.blue-colors {
+    color: darkblue;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* HexaDecimal Colors */
+.text {
+    color: #333333;
+    background-color: #ff6b6b;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* RGB Colors */
+.red {
+    color: rgb(255, 0, 0);
+    background-color: rgb(165, 217, 165);
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* RGBA Colors (with transparency) */
+.highlight {
+    color: rgba(255, 255, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* HSL Colors */
+.green {
+    color: hsl(240, 100%, 50%);
+    background-color: hsl(120, 100%, 50%);
+    border: 2px solid hsl(300, 50%, 80%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* HSLA Colors with transparency */
+.hsla-box {
+    color: hsla(200, 100%, 40%, 1);
+    background-color: hsla(340, 100%, 70%, 0.5);
+    border: 2px solid hsla(50, 100%, 50%, 1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* Transparent and currentColor */
+.example {
+    background-color: transparent;
+    color: #dd6262;
+    border: 2px solid currentColor;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Gradient example */
+.gradient {
+    background: linear-gradient(90deg, #dd6262, #ff6b6b, #805e5e);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Backgrounds */
+/* Background color */
+h5 {
+    background-color: #4e763d;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Transparent Bg */
+.bg {
+    background-color: transparent;
+    border: 2px dashed #3e1818;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: blueviolet;
+}
+
+/* Background image repeat */
+.img-bg {
+    background-image: url("CSS1.png");
+    background-repeat: repeat;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #493131;
+    border-radius: 10px;
+}
+
+/* No Repeat Background */
+.bg-no-repeat {
+    background-image: url("CSS1.png");
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #643a3a;
+    border-radius: 10px;
+}
+
+/* Fixed background */
+.fixed-bg {
+    background-image: url("CSS2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Multiple Backgrounds */
+.multiple-bg {
+    background-image: url("CSS1.png"), url("CSS2.png");
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    padding: 100px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Borders */
+/* Different Border styles */
+/* Dotted Border */
+.dotted {
+    border: 2px dotted #3e1818;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Dashed Border */
+.dashed {
+    border: 2px dashed #ee5a24;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.solid {
+    border: 2px solid #667eea;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.double {
+    border: 4px double #764ba2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.groove {
+    border: 5px groove #ff6b6b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.ridge {
+    border: 5px ridge #ee5a24;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.inset {
+    border: 5px inset #667eea;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.outset {
+    border: 4px outset #764ba2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Different border widths */
+.thin {
+    border: thin solid #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.medium {
+    border: medium solid #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.thick {
+    border: thick solid #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.specific-width {
+    border: 6px solid #ff6b6b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Individual side borders */
+.top-only {
+    border-top: 4px solid #ff6b6b;
+    padding: 20px;
+    margin: 20px;
+}
+
+.right-only {
+    border-right: 4px solid #ee5a24;
+    padding: 20px;
+    margin: 20px;
+}
+
+.bottom-only {
+    border-bottom: 4px solid #667eea;
+    padding: 20px;
+    margin: 20px;
+}
+
+.left-only {
+    border-left: 4px solid #764ba2;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Rounded corners */
+.rounded-box {
+    border: 2px solid #ff6b6b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.circle-box {
+    border: 2px solid #ee5a24;
+    border-radius: 70%;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.oval-box {
+    border: 3px solid #3a415f;
+    border-radius: 50px/25px;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
+
+.irregular-rounded {
+    border: 3px solid #764ba2;
+    border-radius: 10px 40px 5px 40px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Complex border example */
+.complex-border {
+    border: 5px solid;
+    border-image: linear-gradient(135deg, #ff6b6b, #ee5a24) 1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
