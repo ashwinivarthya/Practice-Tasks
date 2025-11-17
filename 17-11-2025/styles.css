@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(244, 240, 240);
+}
+
+header {
+    top: 0;
+    display: flex;
+    background-color: white;
+    padding: 15px 40px;
+    position: sticky;
+    box-shadow: 0 6px 12px rgb(210, 210, 216);
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.6;
+}
+
+#header {
+    display: flex;
+}
+
+.field {
+    color: rgb(60, 60, 233);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 700;
+}
+
+nav a {
+    color: rgb(24, 16, 16);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: rgb(152, 137, 137);
+}
+
+.btn {
+    padding: 10px 18px;
+    background-color: rgb(60, 60, 233);
+    border-radius: 5px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(142, 142, 204);
+    color: rgb(24, 16, 16);
+}
+
+.hero {
+    display: flex;
+    margin: 100px auto;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    margin: 30px auto;
+}
+
+.right {
+    margin-right: auto;
+}
+
+h1 {
+    color: blue;
+}
+
+.para {
+    color: rgb(70, 73, 78);
+}
+
+.button {
+    background-color: orange;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(222, 166, 61);
+}
+
+.programs {
+    background-color: rgb(212, 206, 206);
+    margin: 10px auto;
+    padding: 50px;
+    align-items: center;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgb(145, 145, 147);
+}
+
+.card h3 {
+    padding: 15px;
+    color: rgb(104, 104, 219);
+}
+
+.card p {
+    padding: 15px;
+    color: rgb(70, 73, 78);
+}
+
+.card a {
+    padding: 15px;
+    color: rgb(84, 84, 233);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgb(123, 123, 172);
+}
+
+.student {
+    display: flex;
+    margin: 100px auto;
+    padding: 30px;
+    align-items: center;
+    line-height: 1.6;
+}
+
+h3 {
+    color: rgb(62, 62, 245);
+    ;
+}
+
+.lite {
+    margin: 50px auto;
+}
+
+.lite img {
+    border-radius: 10px;
+    width: auto;
+}
+
+.campus {
+    margin-right: auto;
+}
+
+footer {
+    background-color: rgb(41, 41, 208);
+    color: white;
+    padding: 40px;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    margin-left: 250px;
+}
