@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="tutorials.css">
+</head>
+
+<body>
+
+    <div class="header" id="page-top">
+        <h1>CSS Margins & Padding</h1>
+        <p>Controlling space Outside & Inside elements.</p>
+    </div>
+
+    <div class="container">
+
+        <section class="content">
+
+            <h2>1. What is Margin?</h2>
+            <p>Margin is the space <b>outside</b> an element. It creates space between two elements.</p>
+            <pre>
+div {
+    margin: 20px;
+}
+            </pre>
+
+            <h3>Margin – Individual Sides:</h3>
+            <pre>
+div {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+            </pre>
+
+            <h3>Margin Shorthand:</h3>
+            <p>Shorthand uses 1, 2, 3, or 4 values.</p>
+            <pre>
+div {
+    margin: 10px 20px 15px 5px;  
+}
+
+<!-- top right bottom left -->
+            </pre>
+
+            <h3>Margin Auto (Centering):</h3>
+            <p>Used to center block elements.</p>
+            <pre>
+div {
+    width: 300px;
+    margin: auto;
+}
+            </pre>
+
+        </section>
+
+        <section class="example">
+
+            <h2>2. What is Padding?</h2>
+            <p>Padding is the space <b>inside</b> an element. It adds space between content and border.</p>
+            <pre>
+div {
+    padding: 20px;
+}
+            </pre>
+
+            <h3>Padding – Individual Sides:</h3>
+            <pre>
+div {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+            </pre>
+
+            <h3>Padding Shorthand:</h3>
+            <pre>
+div {
+    padding: 10px 20px;
+}
+<!-- top-bottom | left-right -->
+            </pre>
+
+            <h2>3. Margin vs Padding</h2>
+            <ul>
+                <li><b>Margin</b> = Outside space</li>
+                <li><b>Padding</b> = Inside space</li>
+                <li>Padding increases element size; margin does not.</li>
+            </ul>
+
+            <h2>4. Example Box:</h2>
+            <pre>
+.box {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+}
+            </pre>
+
+        </section>
+
+    </div>
+
+    <a href="css-bg-border.html" id="prev-page">
+        <<< Backgrounds & Borders</a>
+        <a href="css.html" id="next-page">
+        CSS Tutorials >>></a>
+        <br>
+            <footer>
+                <p>&copy; Tutorials. 2025</p>
+                <p>Designed By Jadavath Varthya Ashwini.</p>
+            </footer>
+
+</body>
+
+</html>

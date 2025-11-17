@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="tutorials.css">
+</head>
+
+<body>
+    <div class="header" id="page-top">
+        <h1>Audios & Videos</h1>
+        <p>Learn how to embed audio and video content in HTML.</p>
+    </div>
+
+    <main class="container">
+        <section class="content">
+            <h3>&lt;audio&gt; Element :-</h3>
+            <p>The HTML &lt;audio&gt; element is used to play an audio files on a web page.</p>
+
+            <p>To play an audio file in HTML, use the &lt;audio&gt; element as shown below:</p>
+            <p style="color: blue;">&lt;audio controls&gt;
+                &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+                &lt;source src="audio.ogg" type="audio/ogg"&gt;
+                Your browser does not support the audio element.
+                &lt;/audio&gt;
+            </p>
+
+            <p>How it works is shown below:</p>
+
+            <p>The <b>controls</b> attribute adds audio controls, like play, pause, and volume.</p>
+            <p>The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose
+                from. The browser will use the first recognized format.</p>
+            <p>The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not
+                support the &lt;audio&gt; element.</p>
+            <p>To start an audio file automatically, use the <b>autoplay</b> attribute.</p>
+            <p>To mute an audio file, use the <b>muted</b> attribute.</p>
+            <br><br>
+
+            <p style="font-weight: bold;">Example:</p>
+            <audio controls autoplay muted>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section class="example">
+            <h3>&lt;video&gt; Element :-</h3>
+            <p>The HTML &lt;video&gt; element is used to show a video on a web page.</p>
+            <p>To show a video in HTML, use the &lt;video&gt; element as shown below:</p>
+            <p style="color: blue;">&lt;video controls&gt;
+                &lt;source src="video.mp4" type="video/mp4"&gt;
+                &lt;source src="video.ogg" type="video/ogg"&gt;
+                Your browser does not support the audio element.
+                &lt;/video&gt;
+            </p>
+
+            <p>How it works is shown below:</p>
+
+            <p>The <b>controls</b> attribute adds video controls, like play, pause and volume.</p>
+            <p>It is a good idea to always include <b>width</b> and <b>height</b> attributes. If height and width are
+                not set, the page might flicker while the video loads.</p>
+            <p>The &lt;source&gt; element allows you to specify alternative video files which the browser may choose
+                from. The browser will use the first recognized format.</p>
+            <p>The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not
+                support the &lt;video&gt; element.</p>
+            <p>To start a video automatically, use the <b>autoplay</b> attribute.</p>
+            <p>To mute a video, use the <b>muted</b> attribute.</p>
+
+            <p><b>Example:</b></p>
+            <video width="400" height="300" controls autoplay muted>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+    <a href="links.html" id="prev-page">
+        <<< Links</a>
+            <a href="tables.html" id="next-page">Tables >>></a>
+            <br>
+            <footer>
+                <p>&copy; Tutorials. 2025</p>
+                <p>Designed By Jadavath Varthya Ashwini.</p>
+            </footer>
+
+</body>
+
+</html>

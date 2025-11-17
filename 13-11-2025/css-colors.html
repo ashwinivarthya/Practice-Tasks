@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="tutorials.css">
+</head>
+
+<body>
+    <div class="header" id="page-top">
+        <h1>CSS Colors</h1>
+        <p>Working with colors in CSS.</p>
+    </div>
+
+    <div class="container">
+        <section class="content">
+
+            <h2>What Are CSS Colors?</h2>
+            <p>CSS allows you to apply colors to text, backgrounds, borders, and many other elements.
+                Colors can be defined in multiple ways such as names, RGB, HEX, HSL, etc.</p>
+
+            <h2>1. Color Names</h2>
+            <p>Simple predefined color names.</p>
+            <pre>
+p {
+    color: red;
+}
+    </pre>
+
+            <h2>2. RGB Colors</h2>
+            <p>Colors are created using Red, Green, and Blue values.
+                Each value ranges from 0 to 255.</p>
+            <pre>
+h1 {
+    color: rgb(255, 0, 0);   /* Red */
+}
+    </pre>
+
+            <h2>3. RGBA Colors</h2>
+            <p>Same as RGB, but includes Alpha (transparency) value (0 to 1).</p>
+            <pre>
+div {
+    background-color: rgba(0, 0, 255, 0.5);  /* Transparent Blue */
+}
+    </pre>
+
+            <h2>4. HEX Colors</h2>
+            <p>Uses a six-digit hexadecimal code.</p>
+            <pre>
+p {
+    color: #00ff00;  /* Green */
+}
+    </pre>
+
+            <h2>5. HSL Colors</h2>
+            <p>HSL stands for Hue, Saturation, Lightness.</p>
+            <pre>
+p {
+    color: hsl(200, 100%, 50%);
+}
+    </pre>
+        </section>
+        <section class="example">
+
+            <h2>6. HSLA Colors</h2>
+            <p>HSL with an Alpha transparency value.</p>
+            <pre>
+div {
+    background-color: hsla(300, 80%, 60%, 0.4);
+}
+    </pre>
+
+            <h2>7. Applying Background Colors</h2>
+            <pre>
+body {
+    background-color: lightgray;
+}
+    </pre>
+
+            <h2>8. Applying Border Colors</h2>
+            <pre>
+div {
+    border: 2px solid rgb(0, 128, 0);
+}
+    </pre>
+
+            <h2>9. Gradient Colors (Linear Gradient)</h2>
+            <p>Used to create smooth color transitions.</p>
+            <pre>
+.box {
+    background: linear-gradient(red, yellow);
+}
+    </pre>
+
+            <h2>10. Gradient Colors (Radial Gradient)</h2>
+            <pre>
+.circle {
+    background: radial-gradient(circle, blue, white);
+}
+    </pre>
+        </section>
+
+    </div>
+
+
+    <a href="css-selectors.html" id="prev-page">
+        <<< CSS Selectors</a>
+            <a href="css-bg-border.html" id="next-page">CSS Bg & Border >>></a>
+            <br>
+            <footer>
+                <p>&copy; Tutorials. 2025</p>
+                <p>Designed By Jadavath Varthya Ashwini.</p>
+            </footer>
+
+</body>
+
+</html>

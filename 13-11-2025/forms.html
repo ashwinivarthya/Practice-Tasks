@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="tutorials.css">
+</head>
+
+<body>
+    <div class="header" id="page-top">
+        <h1>HTML Forms</h1>
+        <p>Learn how to create interactive forms in HTML</p>
+    </div>
+    <div class="container">
+        <section class="content">
+            <p><b>What is a Form in HTML?</b></p>
+            <p>An HTML form is used to collect information from the user.</p>
+            <p><b>Why do we use Forms?</b></p>
+            <ul>
+                <li>To collect user data.</li>
+                <li>For registrations and Logins.</li>
+                <li>For feedback and surveys.</li>
+                <li>For searching.</li>
+                <li>For contact information.</li>
+                <li>For booking tickets or filling applications.</li>
+            </ul>
+            <p><b>Basic Form Structure & Tags:</b></p>
+            <p>The main form is created using the &lt;form&gt; tag.</p>
+            <ol type="1">
+                <li><b>&lt;form&gt;</b>: Creates a form.</li>
+                <li><b>&lt;label&gt;</b>: Adds a label for inputs.</li>
+                <li><b>&lt;input&gt;</b>: Takes user input.</li>
+                <li><b>&lt;textarea&gt;</b>: For long text input.</li>
+                <li><b>&lt;select&gt;</b>: Dropdown list.</li>
+                <li><b>&lt;option&gt;</b>: Options inside dropdown.</li>
+                <li><b>&lt;button&gt;</b>: Creates buttons(submit/reset).</li>
+            </ol>
+            <p><b>Common Input Types:</b></p>
+            <ol type="a">
+                <li><b>text</b>: normal text.</li>
+                <li><b>email</b>: email input.</li>
+                <li><b>password</b>: hide text.</li>
+                <li><b>number</b>: numbers only.</li>
+                <li><b>radio</b>: select one option.</li>
+                <li><b>checkbox</b>: select multiple options.</li>
+                <li><b>date</b>: pick a date.</li>
+                <li><b>file</b>: Upload a file.</li>
+                <li><b>submit</b>: submit the form.</li>
+            </ol>
+        </section>
+        <section class="example">
+            <h2>-:Registration Form:-</h2>
+            <form action="/submit" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter Your Full Name">
+                <br><br>
+
+                <label for="gender">Gender:</label><br><br>
+
+                <input type="radio" id="male" name="gender" value="Male" checked>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <label for="number">RollNumber:</label>
+
+                <input type="text" id="number" name="rollnumber" required placeholder="Enter Your RollNumber">
+                <br><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+
+                    <option value="select">----Select Department----</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="civil">Civil</option>
+                    <option value="chemical">Chemical</option>
+                    <option value="it">Information Technology</option>
+                    <option value="aero">Aerospace</option>
+                    <option value="biotech">Biotechnology</option>
+
+                </select>
+                <br><br>
+
+                <label for="yearofstudy">Year of Study:</label><br><br>
+
+                <input type="radio" id="1st" name="yearofstudy" value="1st" checked>
+                <label for="1st">1st Year</label>
+
+                <input type="radio" id="2nd" name="yearofstudy" value="2nd">
+                <label for="2nd">2nd Year</label>
+
+                <input type="radio" id="3rd" name="yearofstudy" value="3rd">
+                <label for="3rd">3rd Year</label>
+
+                <input type="radio" id="4th" name="yearofstudy" value="4th">
+                <label for="4th">4th Year</label>
+                <br><br>
+
+                <label for="Courses">Select Your Courses:</label><br><br>
+
+                <input type="checkbox" id="html" name="courses" value="HTML" checked>
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="courses" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="javascript" name="courses" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <input type="checkbox" id="python" name="courses" value="Python">
+                <label for="python">Python</label>
+
+                <input type="checkbox" id="java" name="courses" value="Java">
+                <label for="java">Java</label>
+
+                <input type="checkbox" id="datascience" name="courses" value="DataScience">
+                <label for="java">Data Science</label>
+
+                <input type="checkbox" id="cloud" name="courses" value="Cloud">
+                <label for="cloud">Cloud</label>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required placeholder="Enter Your Email">
+                <br><br>
+
+                <label for="photo">Upload Photo:</label><br>
+                <input type="file" id="photo" name="photo" accept="image/*" style="margin: 4px 0;">
+                <!--image/* where it represents only the photos of jpg, jpeg, png etc.,-->
+                <br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms and Conditions</a>.</label>
+                <br><br>
+
+                <button type="submit" class="btn-primary">Submit</button>
+                <button type="reset" class="btn-secondary">Reset</button>
+            </form>
+        </section>
+    </div>
+
+    <a href="tables.html" id="prev-page">
+        <<< Tables</a>
+<a href="html.html" id="next-page">
+        HTML Tutorials >>></a>
+            <br>
+            <footer>
+                <p>&copy; Tutorials. 2025</p>
+                <p>Designed By Jadavath Varthya Ashwini.</p>
+            </footer>
+</body>
+
+</html>
