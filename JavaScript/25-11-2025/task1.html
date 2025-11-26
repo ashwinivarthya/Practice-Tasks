@@ -5,25 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Even/Odd</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aquamarine;
+            justify-content: center;
+            margin: 80px;
+        }
+
+        .btn {
+            padding: 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
-    <input id="num" type="number" placeholder="Enter Number">
-    <button onclick="checkNumber()">Check Number</button>
-    <p id="text"></p>
+
+    <h1>Enter a Number</h1>
+    <input id="num" type="number" placeholder="Enter Number" class="btn">
+    <button onclick="checkNumber()" class="btn">Check Number</button>
+    <button onclick="reset()" class="btn">Reset</button>
+
     <script>
 
         function checkNumber() {
             let number = document.getElementById("num").value;
-            let result = document.getElementById("text");
 
             if (number % 2 === 0) {
                 document.body.style.backgroundColor = "green";
-                result.innerText = "Number is Even";
+
             } else {
                 document.body.style.backgroundColor = "orange";
-                result.innerText = "Number is Odd";
+
             }
+        }
+
+        function reset() {
+            let number = document.getElementById("num").value = "";
+            document.body.style.backgroundColor = "aquamarine";
+
         }
 
     </script>
