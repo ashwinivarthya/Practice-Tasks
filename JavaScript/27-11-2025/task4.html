@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>-:Student Marks:-</h1>
+        <input id="name" type="text" placeholder="Enter Student Name"><br>
+        <input id="maths" type="number" placeholder="Enter Marks"><br>
+        <input id="science" type="number" placeholder="Enter Marks"><br>
+        <input id="social" type="number" placeholder="Enter Marks"><br>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="resetAll()" class="btn">Reset All</button>
+
+        <p id="result" class="result"></p>
+    </div>
+
+    <script>
+        function calculate() {
+            let studentName = document.getElementById("name").value;
+            let m1 = document.getElementById("maths").value;
+            let m2 = document.getElementById("science").value;
+            let m3 = document.getElementById("social").value;
+
+            if (studentName === "" || m1 === "" || m2 === "" || m3 === "") {
+                document.getElementById("result").innerHTML = "Please fill all fields!";
+                return;
+            }
+
+            m1 = m1 ? Number(m1) : 0;
+            m2 = m2 ? Number(m2) : 0;
+            m3 = m3 ? Number(m3) : 0;
+
+            let Total = m1 + m2 + m3;
+            let Average = Total / 3;
+
+            let Grade;
+            if (Average >= 90) {
+                Grade = "A";
+            } else if (Average >= 70) {
+                Grade = "B";
+            } else if (Average >= 50) {
+                Grade = "C";
+            } else {
+                Grade = "Fail";
+            }
+
+            let studentData = {
+                name: studentName,
+                marks: [m1, m2, m3],
+                total: Total,
+                average: Average.toFixed(2),
+                grade: Grade
+            };
+
+            document.getElementById("result").innerHTML =
+                "Name: " + studentData.name + "<br>" +
+                "Marks: " + studentData.marks + "<br>" +
+                "Total: " + studentData.total + "<br>" +
+                "Average: " + studentData.average + "<br>" +
+                "Grade: " + studentData.grade;
+
+            console.log("Student Data:", studentData);
+        }
+
+        function resetAll() {
+            document.getElementById("name").value = "";
+            document.getElementById("maths").value = "";
+            document.getElementById("science").value = "";
+            document.getElementById("social").value = "";
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+
+</body>
+
+</html>
