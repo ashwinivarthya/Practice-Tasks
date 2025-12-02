@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #80e0f8, #eaa1ed);
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(133, 27, 133);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>-:Conditional Statements:-</h1>
+
+    <script>
+        // If / Else If / Else conditional Statements
+
+        let budget = 1000;
+        let urgency = "high";
+
+        if (budget < 1000) {
+            console.log("Travel through: Bus");
+        } else if (urgency == "low") {
+            console.log("Travel through: Train");
+        } else if (urgency == "high") {
+            console.log("Travel through: Flight")
+        } else {
+            console.log("Travel through: car or bike");
+        }
+
+        // Nested If
+
+        let season = "winter";
+        let distance = 10;
+
+        if (season === "winter") {
+            if (distance < 15) {
+                console.log("Wear a jacket and travel by cab");
+            } else {
+                console.log("Avoid bike")
+            }
+        } else {
+            console.log("it is not winter")
+        }
+
+        //Switch Cases
+
+        let weather = "winter";
+        switch (weather) {
+            case "sunny":
+                console.log("It's sunny, wear sunglasses");
+                break;
+            case "winter":
+                console.log("It's cold, wear a jacket");
+                break;
+            case "rainy":
+                console.log("It's rainy, carry an umbrella");
+                break;
+            case "storm":
+                console.log("Storm Alert! Don't go outside");
+                break;
+            default:
+                console.log("Weather condition is Unknown");
+                break;
+        }
+
+        // Terrinary Operator
+
+        let age = 18;
+        let eligible = age >= 18 ? "can Vote" : "Minor";
+        console.log(eligible);
+
+        // Logical Operators 
+
+        // Logical AND(&&)
+        let marks = 85;
+        let attendance = 92;
+
+        if (marks > 80 && attendance > 90) {
+            console.log("Eligible for scholarship");
+        } else {
+            console.log("Not eligible");
+        }
+
+        // Logical OR (||)
+        let license = "valid";
+        let ages = 18;
+        if (ages > 18 || license === "valid") {
+            console.log("Can Drive");
+        } else {
+            console.log("Cannot Drive");
+        }
+
+        // Logical NOT (!)
+        let islightOn = true;
+        if(!islightOn) {
+            console.log("Turn Off the Light")
+        } else {
+            console.log("Turn On the Light")
+        }
+
+    </script>
+
+</body>
+
+</html>

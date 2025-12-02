@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #80e0f8, #eaa1ed);
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(133, 27, 133);
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>-:Document Object Model:-</h1>
+    <p id="name"></p>
+    <p id="demo"></p>
+    <p id="intro">About Myself</p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        // DOM Method
+        document.getElementById("demo").innerHTML = "Ashwini Jadavath Varthya";
+
+        // DOM Elements
+
+        const element = document.getElementById("intro");
+        document.getElementById("demo1").innerHTML =
+            "The text from the intro paragraph is: " + element.innerHTML;
+
+    </script>
+
+</body>
+
+</html>
