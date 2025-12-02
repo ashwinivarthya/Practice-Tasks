@@ -8,41 +8,139 @@
     <style>
         body {
             background: linear-gradient(120deg, #80e0f8, #eaa1ed);
-            font-size: 20px;
-            text-align: center;
         }
 
         h1 {
             color: rgb(133, 27, 133);
             text-decoration: underline;
+            text-align: center;
         }
 
         p {
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 500;
+        }
+
+        h2 {
+            color: rgb(30, 132, 122);
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        .section {
+            background: #e0f7fa;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 20px 15px;
+            border: none;
+            font-weight: 600;
+            font-size: 20px;
+            border-radius: 6px;
+            background-color: #4a74f5;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #274ed9;
         }
     </style>
 </head>
 
 <body>
     <h1>-:Document Object Model:-</h1>
-    <p id="name"></p>
-    <p id="demo"></p>
-    <p id="intro">About Myself</p>
-    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+    <div class="section">
+        <h2>-:About Me:-</h2>
+        <p id="intro">
+            Hello, this is <b>Jadvath Varthya Ashwini</b>. I am an <mark>IT professional with 2.8 years</mark>
+            experience in database administration, with a strong proficiency in <i style="color: rgb(52, 238, 77);">SQL
+                Server</i>. My core competencies include ensuring high
+            availability, performance, and security of enterprise databases. I have completed my graduation in 2021 in
+            the stream <b>Electronics and Communication Engineering.</b>
+            I have a technical knowledge on SQL and I have a Work Experience in SQL. I have joined Infosys in the year
+            2022 and
+            resigned in 2024.Now I have started My journey in Oppty Techhub.
+            I am very much Excited to restart my career at this company.I have created A web application for job
+            searching and applying. Developed a web application for searching and applying for jobs. Implemented a
+            system that allows jobseekers
+            to create accounts, log in, search for jobs, and apply based on their skill set. Created features for
+            jobseekers to search for jobs and job holders to post jobs.
+        </p>
+    </div>
 
-    <p id="demo1"></p>
+    <!-- Using getElementsByClassName -->
+    <div class="section">
+        <h2>-:Education:-</h2>
+        <p class="education">SSC - St. Anthony's High School</p>
+        <p class="education">Intermediate - St. Anthony's Junior College</p>
+        <p class="education">B.Tech in Electronics and Communication Engineering from BVRIT</p>
+        <p id="ClassId"></p>
+        <button onclick="showEducation()">Show First Education</button>
+    </div>
+
+    <!-- Using getElementsByTagName -->
+    <div class="section">
+        <h2>-:Skills:-</h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Python</p>
+        <p id="Tag"></p>
+        <button onclick="showSkills()">Show First Skill</button>
+    </div>
+
+    <!-- Using querySelectorAll -->
+    <div class="section">
+        <h2>-:Hobbies:-</h2>
+        <p class="hobby">Cooking</p>
+        <p class="hobby">Reading</p>
+        <p class="hobby">Gaming</p>
+        <p id="Query"></p>
+        <button onclick="showHobbies()">Show First Hobby</button>
+    </div>
+
+    <!-- Styling example -->
+    <div class="section">
+        <h2>-:CSS Styling:-</h2>
+        <p id="Style">I worked in Infosys as a web developer and I have 3 years of Experience in Web Development.</p>
+        <button onclick="changeStyle()">Change Style</button>
+    </div>
 
     <script>
-        // DOM Method
-        document.getElementById("demo").innerHTML = "Ashwini Jadavath Varthya";
+        //  getElementById example
+        const Intro = document.getElementById("intro");
 
-        // DOM Elements
+        //  getElementsByClassName example 
+        function showEducation() {
+            const edu = document.getElementsByClassName("education");
+            document.getElementById("ClassId").innerHTML = "First education: " + edu[0].innerHTML;
+        }
 
-        const element = document.getElementById("intro");
-        document.getElementById("demo1").innerHTML =
-            "The text from the intro paragraph is: " + element.innerHTML;
+        //  getElementsByTagName example
+        function showSkills() {
+            const skills = document.getElementsByTagName("p");
+            document.getElementById("Tag").innerHTML = "First Skill: " + skills[5].innerHTML;
+        }
 
+        //  querySelectorAll example
+        function showHobbies() {
+            const hobbies = document.querySelectorAll("p.hobby");
+            document.getElementById("Query").innerHTML = "First hobby: " + hobbies[0].innerHTML;
+        }
+
+        //  CSS styling example
+        function changeStyle() {
+            const demo = document.getElementById("Style");
+            demo.style.color = "black";
+            demo.style.background = "rgb(232, 159, 232)";
+            demo.style.padding = "10px";
+            demo.style.borderRadius = "8px";
+        }
     </script>
 
 </body>
