@@ -52,6 +52,12 @@ nav a:hover {
     text-underline-offset: 10px;
 }
 
+nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: 600;
+}
+
 .trade-btn {
     background: none;
     border: 4px solid #ff5f60;
@@ -64,8 +70,6 @@ nav a:hover {
 .trade-btn:hover {
     color: #ff4b4b;
 }
-
-/* Home page */
 
 .hero {
     background: linear-gradient(90deg, #200045, #330066);
@@ -403,188 +407,12 @@ tbody td {
     background: #f94444;
 }
 
-/* -------------------- TEAM PAGE -------------------- */
-
-/* .team-section {
-    margin: 150px auto 60px;
-    max-width: 1200px;
-    padding: 0 20px;
-    color: white;
-} */
-
-/* .team-section h2 {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 40px;
-    font-weight: 800;
-    color: #ff5b5b;
-} */
-
-.team-members,
-.team-category {
-    background: #1a0044;
-    padding: 40px;
-    border-radius: 18px;
-    margin-bottom: 60px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
-
-.team-members h3,
-.team-category h3 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 35px;
-    font-weight: 700;
-    color: #ff6f61;
-}
-
-.team-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.team-card {
-    width: 350px;
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.team-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-.team-card .image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.team-card .text {
-    padding: 20px;
-    text-align: left;
-    color: black;
-}
-
-.team-card h4 {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.team-card p {
-     color: rgb(92, 87, 87);
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.team-card .social-icons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-}
-
-.team-card .social-icons a {
-    font-size: 22px;
-    color: white;
-    transition: .3s;
-}
-
-.team-card .social-icons a:hover {
-    color: #ff6f61;
-}
-
-/* -------------------- CONTACT PAGE -------------------- */
-
-.contact-hero {
-    background: #1a0044;
-    color: white;
-    text-align: center;
-    padding: 150px 40px 80px;
-    margin-top: 90px;
-}
-
-.contact-hero h1 {
-    font-size: 50px;
-    font-weight: 800;
-}
-
-.contact-hero p {
-    font-size: 20px;
-    margin-top: 15px;
-    opacity: 0.6;
-}
-
-.contact-main {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 80px;
-    background: #12003a;
-    color: white;
-}
-
-.contact-left,
-.contact-right {
-    flex: 1;
-}
-
-.contact-left h2,
-.contact-right h2 {
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 18px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-}
-
-form textarea {
-    height: 150px;
-    resize: none;
-}
-
-.send-btn {
-    background: #ff6f61;
-    color: white;
-    font-size: 18px;
-    padding: 15px 25px;
-    border-radius: 25px;
-    border: none;
-}
-
-.send-btn:hover {
-    background: #f94444;
-}
-
-.support-box {
-    margin-top: 40px;
-    padding: 25px;
-    background: #230055;
-    border-radius: 15px;
-}
-
-.support-box a {
-    color: #ff6f61;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
 footer {
     background-color: #330066;
     justify-content: space-between;
     padding: 100px;
+    color: white;
+    font-size: 20px;
 }
 
 .container {
@@ -625,6 +453,8 @@ footer {
     background-color: rgb(106, 106, 106);
     color: white;
     border-radius: 8px;
+    background: none;
+    border: 1px solid white;
 }
 
 .social-icons i:hover {
