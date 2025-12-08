@@ -92,13 +92,13 @@ nav a.active {
 
 .latest-articles h2 {
     text-align: center;
-    font-size:40px;  
+    font-size: 40px;
 }
 
 .article-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap : 30px;
+    gap: 30px;
     margin: 100px;
     justify-content: space-between;
 }
@@ -136,7 +136,7 @@ nav a.active {
     background: #ff5b5b;
     color: white;
 }
- 
+
 .blog {
     text-align: center;
     padding: 80px;
@@ -240,41 +240,52 @@ footer {
     background-color: #ff5b5b;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
     .blog-hero {
         font-size: 20px;
-        padding: 60px 20px;
     }
 
     .article-cards {
         grid-template-columns: repeat(1, 1fr);
-        margin: 50px;
+        gap: 25px;
+        margin: 20px;
+    }
+
+    .article-card {
+        font-size: 18px;
+        padding: 20px;
     }
 
     .blog {
-        width: 100%;
-    }  
-    
+        padding: 40px 20px;
+    }
+
+    .blog h2 {
+        font-size: 32px;
+    }
+
+    .blog p {
+        font-size: 24px;
+    }
+
     .blog-box {
         width: 100%;
     }
 
-    .blog-box input {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
+    .blog-box input,
     .blog-box button {
         padding: 12px 20px;
         font-size: 16px;
     }
 
     footer {
-        padding: 40px;
-        font-size: 16px;
+        padding: 50px;
+        font-size: 18px;
     }
 
-    .container {
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
     }
 }

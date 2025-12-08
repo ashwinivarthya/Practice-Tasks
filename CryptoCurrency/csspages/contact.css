@@ -80,6 +80,88 @@ nav a.active {
     font-size: 25px;
 }
 
+.contact-hero p {
+    opacity: 0.8;
+}
+
+.contact-container {
+    background-image: url("../assets/contact.png");
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 60px;
+}
+
+.contact-info {
+    background-color: rgb(249, 244, 244);
+    padding: 60px 60px;
+    border-radius: 60px 20px;
+    gap: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 20px;
+}
+
+.contact-info h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-block i,
+.info-block h3 {
+    font-size: 28px;
+}
+
+.info-block p {
+    font-size: 22px;
+}
+
+.contact-form {
+    background-color: rgb(249, 244, 244);
+    padding: 60px 60px;
+    border-radius: 20px 60px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.contact-form button {
+    background-color: #330066;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #ff5f60;
+}
+
 footer {
     background-color: #330066;
     justify-content: space-between;
@@ -132,4 +214,31 @@ footer {
 
 .social-icons i:hover {
     background-color: #ff5b5b;
+}
+
+@media(max-width: 900px){
+    .contact-hero {
+        font-size: 20px;
+    }
+    .contact-container {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+    footer {
+        padding: 50px;
+        font-size: 18px;
+    }
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
 }

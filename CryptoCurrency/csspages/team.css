@@ -6,10 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background: rgb(183, 188, 241);
     line-height: 1.6;
-    padding: 20px;
 }
 
 .navbar {
@@ -73,39 +71,31 @@ nav a.active {
     color: #ff4b4b;
 }
 
-.tean-header h2 {
-    color: #f94444;
-    padding: 20px;
-}
-
 .team-members,
 .team-category {
-    margin: 100px;
-    background: #1a0044;
+    margin: 120px 80px 80px 80px;
     padding: 40px;
     border-radius: 18px;
-    margin-bottom: 60px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .team-members h3,
 .team-category h3 {
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 35px;
     font-weight: 700;
-    color: #ff6f61;
 }
 
 .team-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
 
 .team-card {
     width: 350px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -113,7 +103,6 @@ nav a.active {
 
 .team-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .team-card .image img {
@@ -124,20 +113,17 @@ nav a.active {
 
 .team-card .text {
     padding: 20px;
-    text-align: left;
     color: black;
 }
 
 .team-card h4 {
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .team-card p {
-    color: rgb(92, 87, 87);
-    font-size: 14px;
-    margin-bottom: 20px;
+    color: #777;
+    font-size: 20px;
 }
 
 .team-card .social-icons {
@@ -149,8 +135,10 @@ nav a.active {
 
 .team-card .social-icons a {
     font-size: 22px;
-    color: white;
-    transition: .3s;
+    text-decoration: none;
+    border-radius: 8px;
+    background: grey;
+    margin-bottom: 10px;
 }
 
 .team-card .social-icons a:hover {
@@ -209,4 +197,31 @@ footer {
 
 .social-icons i:hover {
     background-color: #ff5b5b;
+}
+
+@media (max-width: 900px){
+    .team-members,
+    .team-category {
+        margin: 100px 20px 20px 20px;
+        padding: 30px;
+    }
+    .team-card {
+        width: 100%;
+    }
+    .team-card h4 {
+        font-size: 22px;
+    }
+    .team-card p {
+        font-size: 18px;
+    }
+    footer {
+        padding: 50px;
+        font-size: 18px;
+    }
+
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
 }
