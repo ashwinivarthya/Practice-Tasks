@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            background: linear-gradient(70deg, #d1f491, #91edd7);
+            font-family: Arial, sans-serif;
+            margin: 100px;
+            text-align: center;
+        }
+        h1{
+            color: rgb(121, 31, 135);
+            text-decoration: underline;
+        }
+        input, button {
+            margin: 10px;
+            padding: 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: #91edd7;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>-:ToDo List:-</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addtask()">Add Task</button>
+    <div id="taskList"></div>
+
+    <script>
+        function addtask() {
+            let input = document.getElementById("taskInput");
+            let value = input.value.trim();
+            if (value === ""){
+                alert("Please enter a task.");
+                return;
+            }
+
+            /// Creating task item
+
+            let taskList = document.getElementById("taskList");
+            let taskItem = document.createElement("div");   
+            taskItem.textContent = value;  // Adding task text
+            taskItem.style.fontSize = "24px";
+            taskItem.style.color = "rgb(121, 31, 135)";
+            taskItem.style.fontWeight = "bold";          
+            taskList.appendChild(taskItem);
+
+            /// Creating delete button
+
+            let deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "Delete";   //  Adding delete button
+            deleteBtn.style.margin = "20px";
+
+            deleteBtn.onclick = function() {
+                taskList.removeChild(taskItem);
+            };
+
+            taskItem.appendChild(deleteBtn);
+            taskItem.style.hover = "background-color: #91edd7; cursor: pointer; font-weight: 600;";
+            input.value = "";
+        }
+    </script>
+</body>
+</html>

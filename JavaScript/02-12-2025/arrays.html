@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrays</title>
+    <title>Array Methods Project</title>
+
     <style>
         body {
             background: linear-gradient(120deg, #80e0f8, #eaa1ed);
@@ -15,10 +17,105 @@
             color: rgb(133, 27, 133);
             text-decoration: underline;
         }
+
+        #box {
+            width: 40%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            background: #5c6bc0;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background: #3f4a96;
+        }
     </style>
 </head>
+
 <body>
-    <h1>-:Arrays:-</h1>
-    
+
+    <h1>-:Songs List:-</h1>
+
+    <div id="box">
+        <input type="text" id="songInput" placeholder="Enter song name">
+
+        <br><br>
+
+        <button onclick="addSong()">Add Song</button>
+        <button onclick="removeSong()">Remove Song</button>
+        <button onclick="searchSong()">Search Song</button>
+        <button onclick="sortSong()">Sort Song</button>
+        <button onclick="displaySongs()">Display All Songs</button>
+    </div>
+
+    <h2>Output:</h2>
+    <p id="result"></p>
+
+    <script>
+        const songs = ["Deewaniyat", "Saiyaara", "Apna Bana le", "Tere Ishk Mein", "Mera Hua", "Bol Kaffara kya Hoga"];
+
+        function addSong() {
+            let name = document.getElementById("songInput").value;
+            songs.push(name);      // array method
+            document.getElementById("result").innerHTML = "Song added ✔️";
+        }
+
+        function removeSong() {
+            let name = document.getElementById("songInput").value;
+            let index = songs.indexOf(name);     // searching
+
+            if (index !== -1) {
+                songs.splice(index, 1);          // remove
+                document.getElementById("result").innerHTML = "Song removed ❌";
+            } else {
+                document.getElementById("result").innerHTML = "Song not found!";
+            }
+        }
+
+        function searchSong() {
+            let name = document.getElementById("songInput").value;
+
+            if (songs.includes(name)) {               // search method
+                document.getElementById("result").innerHTML = `${name} found ✔️`;
+            } else {
+                document.getElementById("result").innerHTML = `${name} not found ❌`;
+            }
+        }
+
+        function sortSong() {
+            songs.sort();      // sorting
+            document.getElementById("result").innerHTML = "Songs sorted A → Z ✔️";
+        }
+
+        function displaySongs() {
+            let text = "";
+
+            // iteration loop
+            for (let m of songs) {
+                text += m + "<br>";
+            }
+
+            document.getElementById("result").innerHTML = text;
+        }
+    </script>
+
 </body>
+
 </html>
