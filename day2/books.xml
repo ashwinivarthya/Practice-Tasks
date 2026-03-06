@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<book>
+    <title>World Geography</title>
+    <author>David Harper</author>
+    <chapter>
+        <title>Earth Structure</title>
+        <para>The Earth consists of crust, mantle and core.</para>
+    </chapter>
+    <section>
+        <title>Crust</title>
+        <para>The crust is the outermost layer of Earth.</para>
+    </section>
+</book>

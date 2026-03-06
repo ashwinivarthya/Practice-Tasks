@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="glossary.xsl"?>
+<glossary>
+    <term>
+        <name>Atmosphere</name>
+        <definition>The layer of gases surrounding Earth.</definition>
+    </term>
+    <term>
+        <name>Hydrosphere</name>
+        <definition>The layer of water on and around Earth.</definition>
+    </term>
+    <term>
+        <name>Biosphere</name>
+        <definition>The layer of life on and around Earth.</definition>
+    </term>
+</glossary>

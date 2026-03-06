@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1.xsl"?>
+<book>
+    <title>Introduction to Geography</title>
+    <author>Dr.John Smith</author>
+    <publisher>Global Education Press</publisher>
+    <year>2023</year>
+    <price>550/-</price>
+    <chapter>
+        <title>Basics of Geography</title>
+        <para>Geography is the study of Earth, its features, and the distribution of life.</para>
+    </chapter>
+    <chapter>
+        <title>Physical Geography</title>
+        <para>Physical geography focuses on natural features like mountains, rivers, and climate.</para>
+    </chapter>
+</book>

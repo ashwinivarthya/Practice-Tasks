@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<students>
+    <student>
+        <name>Ashwini</name>
+        <age>25</age>
+        <course>GIS</course>
+    </student>
+
+    <student>
+        <name>Rahul</name>
+        <age>24</age>
+        <course>Java</course>
+    </student>
+</students>

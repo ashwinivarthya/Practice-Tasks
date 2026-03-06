@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="university.xsl"?>
+<universities>
+    <university>
+        <name>Oxford</name>
+        <departments>
+            <department>
+                <dept>Computer Science</dept>
+                <students>500</students>
+            </department>
+            <department>
+                <dept>Geography</dept>
+                <students>300</students>
+            </department>
+        </departments>
+    </university>
+    <university>
+        <name>Harvard</name>
+        <departments>
+            <department>
+                <dept>Business</dept>
+                <students>400</students>
+            </department>
+            <department>
+                <dept>Law</dept>
+                <students>250</students>
+            </department>
+        </departments>
+    </university>
+</universities>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="population.xsl"?>
+<population>
+    <area>
+        <city>Hyderabad</city>
+        <state>Telangana</state>
+        <population>10 million</population>
+    </area>
+
+    <area>
+        <city>Mumbai</city>
+        <state>Maharashtra</state>
+        <population>20 million</population>
+    </area>
+
+    <area>
+        <city>Bengaluru</city>
+        <state>Karnataka</state>
+        <population>12 million</population>
+    </area>
+
+    <area>
+        <city>Chennai</city>
+        <state>Tamil Nadu</state>
+        <population>11 million</population>
+    </area>
+</population>
